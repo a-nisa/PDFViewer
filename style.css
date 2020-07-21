@@ -1,48 +1,53 @@
 
 html{
-	font-family:sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 body{
 	margin:0px;
 }
 
+h1{
+	font-family: 'Abril Fatface', cursive;
+}
+
 .header{
-	text-align: center;
-	padding:20px;
+	text-align: left;
+	font-weight: bold;
+	padding:10px;
 	cursor: pointer;
-	background-color: #ccc;
-	font-size: 20px;
+	background-color: #a1fc23;
+	font-size: 125%;
+	letter-spacing: 2px;
+	transition: 0.8s;
+}
+
+.header:hover{
+	background-color: #70c900;
 }
 
 .menu{
-	text-align: center;
 	padding:20px;
-	background-color: #eee;
+	background-color: darkgreen;
 }
 
 .btn{
 	border:none;
 	text-align: center;
 	padding:10px;
-	border-radius: 5px;
 	transition:0.4s;
 	cursor:pointer;
-}
-
-
-.btn:active{
-	transform: translateY(4px);
+	border: thin solid black;
 }
 
 .fullwin{
-	background-color: blue;
-	color:white;
+	background-color: gold;
+	color:black;
 }
 
 .fullwin:hover{
-	background-color:white;
-	color:blue;
+	background-color:black;
+	color:gold;
 }
 
 
@@ -57,43 +62,13 @@ body{
 }
 
 .sized{
-	background-color: pink;
+	background-color: gold;
 	color:black;
 }
 
 .sized:hover{
 	background-color: black;
-	color:pink;
-}
-
-.picker-div{
-	text-align: center;
-	padding: 10px;
-	background-color: #ddd;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-.picker-label{
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-    transition: 0.4s;
-    border-radius: 5px;
-    background-color: #F9B015;
-    color:black;
-}
-
-.picker-label:hover{
-	background-color: black;
-	color: #F9B015;
-}
-
-.picker-label:active{
-	transform: translateY(4px);
+	color:gold;
 }
 
 .pdf-view{
@@ -105,9 +80,14 @@ input[type="file"] {
 }
 
 h2{
-	background-color: #ccc;
+	background-color: #a1fc23;
+	font-weight: bold;
 	padding: 20px;
-	font-family: "Times new roman";
+}
+
+
+.text{
+	background-color: #edfebd;
 }
 
 p{

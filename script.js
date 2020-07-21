@@ -25,12 +25,14 @@ let init = () => {
     document.getElementsByTagName('body').style = "margin: 0px";
     document.getElementById('adobe-dc-pdf-view').style = "";
   };
+
   document.getElementById("inline-button").onclick = () => {
     setViewMode('IN_LINE');
     // revert back to inline style for the body and div elements
     document.getElementsByTagName('body').style = "margin: 0px";
     document.getElementById('adobe-dc-pdf-view').style = "";
   };
+
   document.getElementById("sized-button").onclick = () => {
     setViewMode('SIZED_CONTAINER');
     // revert to sized container style
@@ -38,7 +40,7 @@ let init = () => {
     document.getElementById('adobe-dc-pdf-view').style = "height: 476px; width: 600px; border: 1px solid #dadada; display:inline-block;";
   };
 
-  // call previewFile for the 1st time when sdk is ready
+  // call previewFile for the first time when sdk is ready
   document.addEventListener("adobe_dc_view_sdk.ready" , () => {
     previewFile(fileDetails);
   });
@@ -62,6 +64,7 @@ let setViewMode = (newEmbedMode) => {
  * event's data to Google Analytics. 
  */
 let previewFile = function(fileDetails){
+  
   let adobeDCView = new AdobeDC.View({
     clientId:"07d2235e9e4c4ac8bcbbd2454421bcca",
     divId:"adobe-dc-pdf-view",
@@ -78,11 +81,12 @@ let previewFile = function(fileDetails){
     }
   }, viewConfiguration);
 
+  // set-up callback for all Adobe Events we are interested in
   adobeDCView.registerCallback(
     AdobeDC.View.Enum.CallbackType.EVENT_LISTENER,
-    (event) => {                // the callback for all Adobe Events
+    (event) => {               
       switch(event.type){
-        case "DOCUMENT_OPEN":           // send relevant ones to ga
+        case "DOCUMENT_OPEN":           
           ga("send", "event", {
             eventCategory: "Adobe DC View SDK",
             eventAction: "Document Open",
@@ -114,8 +118,8 @@ let previewFile = function(fileDetails){
       }
     },
     {
-      enablePDFAnalytics:true,   
-      enableFilePreviewEvents:true
+        enablePDFAnalytics:true,                           
+        enableFilePreviewEvents:true
     });  
 };
 
