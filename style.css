@@ -1,0 +1,116 @@
+
+html{
+	font-family:sans-serif;
+}
+
+body{
+	margin:0px;
+}
+
+.header{
+	text-align: center;
+	padding:20px;
+	cursor: pointer;
+	background-color: #ccc;
+	font-size: 20px;
+}
+
+.menu{
+	text-align: center;
+	padding:20px;
+	background-color: #eee;
+}
+
+.btn{
+	border:none;
+	text-align: center;
+	padding:10px;
+	border-radius: 5px;
+	transition:0.4s;
+	cursor:pointer;
+}
+
+
+.btn:active{
+	transform: translateY(4px);
+}
+
+.fullwin{
+	background-color: blue;
+	color:white;
+}
+
+.fullwin:hover{
+	background-color:white;
+	color:blue;
+}
+
+
+.inline{
+	background-color: gold;
+	color: black;
+}
+
+.inline:hover{
+	background-color: black;
+	color:gold;
+}
+
+.sized{
+	background-color: pink;
+	color:black;
+}
+
+.sized:hover{
+	background-color: black;
+	color:pink;
+}
+
+.picker-div{
+	text-align: center;
+	padding: 10px;
+	background-color: #ddd;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.picker-label{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 5px;
+    background-color: #F9B015;
+    color:black;
+}
+
+.picker-label:hover{
+	background-color: black;
+	color: #F9B015;
+}
+
+.picker-label:active{
+	transform: translateY(4px);
+}
+
+.pdf-view{
+	text-align: center;
+}
+
+#adobe-dc-pdf-view{
+	display:inline-block;
+}
+
+h2{
+	background-color: #ccc;
+	padding: 20px;
+	font-family: "Times new roman";
+}
+
+p{
+	letter-spacing: 1px;
+	padding:15px;
+}
