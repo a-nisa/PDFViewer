@@ -7,28 +7,24 @@ body{
 	margin:0px;
 }
 
-h1{
-	font-family: 'Abril Fatface', cursive;
-}
-
 .header{
 	text-align: left;
 	font-weight: bold;
 	padding:10px;
 	cursor: pointer;
-	background-color: #a1fc23;
+	background-color: #7ef9ff;
 	font-size: 125%;
 	letter-spacing: 2px;
 	transition: 0.8s;
 }
 
 .header:hover{
-	background-color: #70c900;
+	background-color: #3fe0d0;
 }
 
 .menu{
 	padding:20px;
-	background-color: darkgreen;
+	background-color: #89cff0;
 }
 
 .btn{
@@ -41,34 +37,34 @@ h1{
 }
 
 .fullwin{
-	background-color: gold;
-	color:black;
+	background-color: #4682b4;
+	color:white;
 }
 
 .fullwin:hover{
-	background-color:black;
-	color:gold;
+	background-color:white;
+	color:#4682b4;
 }
 
 
 .inline{
-	background-color: gold;
-	color: black;
+	background-color: #4682b4;
+	color: white;
 }
 
 .inline:hover{
-	background-color: black;
-	color:gold;
+	background-color: white;
+	color:#4682b4;
 }
 
 .sized{
-	background-color: gold;
-	color:black;
+	background-color: #4682b4;
+	color:white;
 }
 
 .sized:hover{
-	background-color: black;
-	color:gold;
+	background-color: white;
+	color:#4682b4;
 }
 
 .pdf-view{
@@ -80,17 +76,18 @@ h1{
 }
 
 h2{
-	background-color: #a1fc23;
+	background-color: #89cff0;
 	font-weight: bold;
 	padding: 20px;
 }
 
 
 .text{
-	background-color: #edfebd;
+	background-color: #eeeffe;
 }
 
 p{
 	letter-spacing: 1px;
 	padding:15px;
 }
+
